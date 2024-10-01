@@ -14,14 +14,14 @@
             line-height: 1.6;
         }
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/api/placeholder/1200/600');
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('mother_father_hero_2.webp');
             background-size: cover;
             background-position: center;
-            height: 100vh;
+            height: 80vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
+            text-align: left;
             color: white;
         }
         .hero-content {
@@ -38,7 +38,7 @@
         .btn {
             display: inline-block;
             padding: 15px 30px;
-            background-color: #e50914;
+            background-color: #C18074;
             color: white;
             text-decoration: none;
             font-size: 1.2rem;
@@ -46,7 +46,7 @@
             transition: background-color 0.3s;
         }
         .btn:hover {
-            background-color: #f40612;
+            background-color: #785263;
         }
         .section {
             padding: 5rem 2rem;
@@ -68,6 +68,16 @@
             transition: transform 0.3s;
         }
         .card:hover {
+            transform: translateY(-5px);
+        }
+        .testimonial-card {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .testimonial-card:hover {
             transform: translateY(-5px);
         }
         h2 {
@@ -112,7 +122,7 @@
         .session-icon {
             font-size: 2rem;
             margin-right: 1.5rem;
-            color: #e50914;
+            color: #C18074;
         }
         .session-content h4 {
             margin: 0 0 0.5rem 0;
@@ -123,43 +133,41 @@
             position: relative;
             overflow: hidden;
         }
-        .facilitator::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 200px;
-            background: linear-gradient(135deg, #ff9966, #ff5e62);
-            transform: skewY(-4deg);
-            transform-origin: top left;
-        }
         .facilitator-content {
-            position: relative;
+            /* position: relative;
             z-index: 1;
             color: #333;
-        }
-        .facilitator h2 {
-            color: white;
-            margin-bottom: 3rem;
-        }
-        .experience-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        .experience-item {
-            background: white;
+            max-width: 800px; */
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #f9f9f9; /* Subtle background */
             border-radius: 10px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+            font-family: 'Arial', sans-serif; /* Simple, clean font */
+            color: #333; /* Neutral text color */
+            line-height: 1.7; /* Comfortable spacing */
+        }
+        .facilitator-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 4fr));
+        }
+        .facilitator-img {
             display: flex;
             align-items: center;
+            justify-content: center;
+            text-align: left;
+            padding: 2rem;
         }
-        .experience-icon {
-            font-size: 2rem;
-            margin-right: 1.5rem;
-            color: #e50914;
+        .facilitator-img img {
+            max-width: 400px; /* Set the max width of the image */
+            border-radius: 10px; /* Optional: round the image corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for depth */
+        }
+        .facilitator-text {
+            padding: 5rem;
+        }
+        .facilitator-text h2 {
+            text-align: left;
         }
     </style>
 </head>
@@ -167,16 +175,20 @@
     <div class="hero">
         <div class="hero-content">
             <h1>One Month Ideal Mother & Father Program</h1>
-            <p>Transform your parenting journey in just 30 days</p>
-            <a href="#" class="btn">Enroll Now</a>
+            <p><em>First pilot starting October 7</em></p>
+            <p>Taste what it feels like to be securely attached, experience relief and a sense of what could be possible.</p>
+            <a href="https://amandango1.typeform.com/to/zyBfiaXx" target="_blank" class="btn">Apply now</a>
         </div>
     </div>
 
     <section class="section about-ipf">
         <div class="container">
-            <h2>What is Ideal Mother & Father (IMF) Therapy?</h2>
-            <p>IMF Therapy is an innovative approach rooted in Ideal Parent Figure (IPF) methodology, designed to help individuals heal attachment wounds and develop a secure attachment style. By visualizing and internalizing the qualities of ideal parents, participants can rewire their neural pathways, leading to improved relationships, emotional regulation, and overall well-being.</p>
-            <p>Our program combines the core principles of IPF with additional elements from divine mother and father work, parts integration, and polarity techniques, offering a comprehensive approach to personal growth and healing.</p>
+            <h2>Move towards secure attachment</h2>
+            <p>Everything is about attachment.</p>
+            <p>Ideal Parent Figure therapy was developed to help patients who struggled with other forms of therapy reach secure attachment. It is immensely powerful – a pilot study found that symptoms significantly improved for complex PTSD patients after four weeks of 16 minute visualizations once a week.</p>
+            <p>This program is designed to help you understand everything about attachment, and move towards secure attachment.</p>
+            <p>It is influenced heavily by Ideal Parent Figure, but also includes masculine and feminine dynamics from polarity work and parts work.</p>
+            <p>This is our first pilot!</p>
         </div>
     </section>
 
@@ -194,11 +206,11 @@
                 </div>
                 <div class="card">
                     <h3>Daily Meditations</h3>
-                    <p>Personalized practices to center and ground you</p>
+                    <p>Personalized meditations to receive support from your ideal parents</p>
                 </div>
                 <div class="card">
                     <h3>Targeted Support</h3>
-                    <p>Meditations for anxiety, depression, anger, and stuckness</p>
+                    <p>Meditations for specific emotions like anxiety, depression, anger, and stuckness</p>
                 </div>
             </div>
         </div>
@@ -213,7 +225,7 @@
                 </div>
                 <div class="session-content">
                     <h4>Session 1: Foundation</h4>
-                    <p>Introduction to IPF, attachment, and ideal mother & father concepts</p>
+                    <p>Introduction to the basics of Ideal Mother & Father figure and our attachment system, and visualization of ideal parents.</p>
                 </div>
             </div>
             <div class="session-card">
@@ -222,7 +234,7 @@
                 </div>
                 <div class="session-content">
                     <h4>Session 2: Security & Safety</h4>
-                    <p>Exploring the foundations of a secure attachment</p>
+                    <p>Deep dive into what it feels like to feel secure with our ideal mother & father, and to feel safe and protected by them.</p>
                 </div>
             </div>
             <div class="session-card">
@@ -231,7 +243,7 @@
                 </div>
                 <div class="session-content">
                     <h4>Session 3: Attunement & Comfort</h4>
-                    <p>Developing emotional resonance and soothing techniques</p>
+                    <p>Experiencing what it feels like to be deeply attuned to and comforted in all the ways we needed.</p>
                 </div>
             </div>
             <div class="session-card">
@@ -240,7 +252,7 @@
                 </div>
                 <div class="session-content">
                     <h4>Session 4: Delight and Exploration</h4>
-                    <p>Cultivating joy and encouraging personal growth</p>
+                    <p>Imagining an ideal mother & father who delight in us as we are, and are fully supportive of our autonomy and exploration.</p>
                 </div>
             </div>
         </div>
@@ -248,62 +260,51 @@
 
     <section class="section facilitator">
         <div class="container facilitator-content">
-            <h2>About Your Facilitator</h2>
-            <p>This program is a unique blend of Ideal Parent Figure (IPF) therapy and other complementary approaches. My methodology has been shaped by extensive experience and training:</p>
-            <ul class="experience-list">
-                <li class="experience-item">
-                    <div class="experience-icon">
-                        <i class="fas fa-user-graduate"></i>
-                    </div>
-                    <div>
-                        <h4>Intensive IPF Training</h4>
-                        <p>1.5 years working with an Ideal Parent Figure therapist trained under Dan Brown's successor, George Haas</p>
-                    </div>
-                </li>
-                <li class="experience-item">
-                    <div class="experience-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <div>
-                        <h4>Technological Innovation</h4>
-                        <p>Developed an Ideal Parent Figure AI app</p>
-                    </div>
-                </li>
-                <li class="experience-item">
-                    <div class="experience-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div>
-                        <h4>Workshop Facilitation</h4>
-                        <p>Conducted IPF workshops both collaboratively and independently</p>
-                    </div>
-                </li>
-                <li class="experience-item">
-                    <div class="experience-icon">
-                        <i class="fas fa-hands-helping"></i>
-                    </div>
-                    <div>
-                        <h4>One-on-One Coaching</h4>
-                        <p>Extensive experience coaching individuals in Ideal Parent Figure techniques</p>
-                    </div>
-                </li>
-            </ul>
-            <p>My approach is further enriched by the Luminous Awareness True Mirror methodology, incorporating divine mother and father concepts, as well as parts work (through ongoing Aletheia Level 1 training) and polarity work.</p>
-            <p>I've termed this comprehensive approach as IMF (Ideal Mother & Father therapy) to clearly distinguish it as a methodology deeply rooted in IPF, but with its own unique expansions and adjustments.</p>
+            <div class="facilitator-grid">
+                <div class="facilitator-img">
+                    <img src="amanda_profile.jpeg" alt="Amanda's portrait">
+                </div>
+                <div class="facilitator-text">
+                    <h2>About me</h2>
+                    <p>Hi, I'm Amanda.</p>
+                    <p>I've been on a journey into my inner world for the last 8 years. During that time, I've explored every modality I can find – from traditional therapies like CBT and psychoanalysis, to somatic modalities like focusing and parts work, to awakening and energy healing.</p>
+                    <p>Ideal parent figure was such a powerful modality for me. Before doing ideal parent figure, I didn't know that it was possible to feel safe, protected, secure.</p>
+                    <p>I now coach people with a combination of ideal parent figure, parts work, and energy healing. Ideal parent figure has been so helpful for my clients, and I want to share that experience with more people.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonials">
+        <div class="container">
+            <h2>What people say about working with me</h2>
+            <div class="grid">
+                <div class="testimonial-card">
+                    <p>“Amanda’s gift of being able to attune to my thoughts & emotions lead to a breakthrough in my relationship with work - we broke through the surface of the problem and dove straight to the root.”
+                    </p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Working with Amanda has helped me build an awareness of a love that has always been there. This, in combination with internal parts work, has been helpful in learning how to hold myself and my struggles with compassion, which has been incredibly healing. She is kind and patient and also knows when to push and challenge me. She is also great at intuiting what I am sometimes unable to see regarding certain emotions and thoughts. I would highly recommend working with Amanda if you are looking to become more intimate with yourself, shadows and all."
+                    </p>
+                </div>
+                <div class="testimonial-card">
+                    <p>“The exercises that Amanda ran me through were so thoughtfully conducted and explained that I started the process of realizing and processing old traumas that were holding me back in the span of less than an hour."</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="section pricing">
         <div class="container">
-            <h2>Invest in Your Family's Future</h2>
-            <div class="price">$150</div>
-            <p>for the entire program</p>
-            <a href="#" class="btn">Sign Up Now</a>
+            <h2>Join the pilot program</h2>
+            <!-- <div class="price">$150</div> -->
+            <p>The month-long program is <b>$150</b>. We offer a sliding scale if needed.</p>
+            <a href="https://amandango1.typeform.com/to/zyBfiaXx" class="btn">Apply now</a>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 One Month Ideal Mother & Father Program. All rights reserved.</p>
+        <p>&copy; Soularise 2024</p>
     </footer>
 </body>
 </html>
