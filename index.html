@@ -97,15 +97,69 @@
         .about-ipf {
             background-color: #f0f0f0;
         }
-        .session-list {
-            list-style-type: none;
-            padding: 0;
+        .program-structure {
+            background-color: #f9f9f9;
         }
-        .session-list li {
-            margin-bottom: 1rem;
+        .session-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+        }
+        .session-icon {
+            font-size: 2rem;
+            margin-right: 1.5rem;
+            color: #e50914;
+        }
+        .session-content h4 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.2rem;
         }
         .facilitator {
             background-color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .facilitator::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 200px;
+            background: linear-gradient(135deg, #ff9966, #ff5e62);
+            transform: skewY(-4deg);
+            transform-origin: top left;
+        }
+        .facilitator-content {
+            position: relative;
+            z-index: 1;
+            color: #333;
+        }
+        .facilitator h2 {
+            color: white;
+            margin-bottom: 3rem;
+        }
+        .experience-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .experience-item {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+        }
+        .experience-icon {
+            font-size: 2rem;
+            margin-right: 1.5rem;
+            color: #e50914;
         }
     </style>
 </head>
