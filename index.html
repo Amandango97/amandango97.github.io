@@ -4,71 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Month Ideal Mother & Father Program</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        body, html {
             margin: 0;
             padding: 0;
-            background-color: #f3f4f6;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             color: #333;
+            line-height: 1.6;
         }
-        header {
-            background-color: #2563eb;
-            color: white;
-            padding: 2rem 1rem;
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/api/placeholder/1200/600');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
+            color: white;
+        }
+        .hero-content {
+            max-width: 800px;
         }
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
         }
-        main {
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #e50914;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #f40612;
+        }
+        .section {
+            padding: 5rem 2rem;
+        }
+        .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem 1rem;
         }
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
+            gap: 2rem;
         }
         .card {
-            background-color: white;
-            border-radius: 0.5rem;
-            padding: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
         }
-        .button {
-            display: inline-block;
-            background-color: #10b981;
-            color: white;
-            text-decoration: none;
-            padding: 0.75rem 1.5rem;
-            border-radius: 9999px;
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .pricing {
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .price {
+            font-size: 3rem;
             font-weight: bold;
-            font-size: 1.25rem;
-            transition: background-color 0.3s;
-        }
-        .button:hover {
-            background-color: #059669;
+            margin: 1rem 0;
         }
         footer {
-            background-color: #1f2937;
+            background-color: #333;
             color: white;
             text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
+            padding: 2rem;
+        }
+        .about-ipf {
+            background-color: #f0f0f0;
+        }
+        .session-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .session-list li {
+            margin-bottom: 1rem;
+        }
+        .facilitator {
+            background-color: #fff;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>One Month Ideal Mother & Father Program</h1>
-        <p>Transform your parenting journey in just 30 days</p>
-    </header>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>One Month Ideal Mother & Father Program</h1>
+            <p>Transform your parenting journey in just 30 days</p>
+            <a href="#" class="btn">Enroll Now</a>
+        </div>
+    </div>
 
-    <main>
-        <section>
+    <section class="section about-ipf">
+        <div class="container">
+            <h2>What is Ideal Mother & Father (IMF) Therapy?</h2>
+            <p>IMF Therapy is an innovative approach rooted in Ideal Parent Figure (IPF) methodology, designed to help individuals heal attachment wounds and develop a secure attachment style. By visualizing and internalizing the qualities of ideal parents, participants can rewire their neural pathways, leading to improved relationships, emotional regulation, and overall well-being.</p>
+            <p>Our program combines the core principles of IPF with additional elements from divine mother and father work, parts integration, and polarity techniques, offering a comprehensive approach to personal growth and healing.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
             <h2>What's Included</h2>
             <div class="grid">
                 <div class="card">
@@ -88,14 +147,106 @@
                     <p>Meditations for anxiety, depression, anger, and stuckness</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section style="text-align: center; margin-top: 2rem;">
+    <section class="section program-structure">
+        <div class="container">
+            <h2>Program Structure</h2>
+            <div class="session-card">
+                <div class="session-icon">
+                    <i class="fas fa-door-open"></i>
+                </div>
+                <div class="session-content">
+                    <h4>Session 1: Foundation</h4>
+                    <p>Introduction to IPF, attachment, and ideal mother & father concepts</p>
+                </div>
+            </div>
+            <div class="session-card">
+                <div class="session-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="session-content">
+                    <h4>Session 2: Security & Safety</h4>
+                    <p>Exploring the foundations of a secure attachment</p>
+                </div>
+            </div>
+            <div class="session-card">
+                <div class="session-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="session-content">
+                    <h4>Session 3: Attunement & Comfort</h4>
+                    <p>Developing emotional resonance and soothing techniques</p>
+                </div>
+            </div>
+            <div class="session-card">
+                <div class="session-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="session-content">
+                    <h4>Session 4: Delight and Exploration</h4>
+                    <p>Cultivating joy and encouraging personal growth</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section facilitator">
+        <div class="container facilitator-content">
+            <h2>About Your Facilitator</h2>
+            <p>This program is a unique blend of Ideal Parent Figure (IPF) therapy and other complementary approaches. My methodology has been shaped by extensive experience and training:</p>
+            <ul class="experience-list">
+                <li class="experience-item">
+                    <div class="experience-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div>
+                        <h4>Intensive IPF Training</h4>
+                        <p>1.5 years working with an Ideal Parent Figure therapist trained under Dan Brown's successor, George Haas</p>
+                    </div>
+                </li>
+                <li class="experience-item">
+                    <div class="experience-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div>
+                        <h4>Technological Innovation</h4>
+                        <p>Developed an Ideal Parent Figure AI app</p>
+                    </div>
+                </li>
+                <li class="experience-item">
+                    <div class="experience-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div>
+                        <h4>Workshop Facilitation</h4>
+                        <p>Conducted IPF workshops both collaboratively and independently</p>
+                    </div>
+                </li>
+                <li class="experience-item">
+                    <div class="experience-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div>
+                        <h4>One-on-One Coaching</h4>
+                        <p>Extensive experience coaching individuals in Ideal Parent Figure techniques</p>
+                    </div>
+                </li>
+            </ul>
+            <p>My approach is further enriched by the Luminous Awareness True Mirror methodology, incorporating divine mother and father concepts, as well as parts work (through ongoing Aletheia Level 1 training) and polarity work.</p>
+            <p>I've termed this comprehensive approach as IMF (Ideal Mother & Father therapy) to clearly distinguish it as a methodology deeply rooted in IPF, but with its own unique expansions and adjustments.</p>
+        </div>
+    </section>
+
+    <section class="section pricing">
+        <div class="container">
             <h2>Invest in Your Family's Future</h2>
-            <p style="font-size: 1.5rem; color: #2563eb; font-weight: bold;">$150 for the entire program</p>
-            <a href="#" class="button">Sign Up Now</a>
-        </section>
-    </main>
+            <div class="price">$150</div>
+            <p>for the entire program</p>
+            <a href="#" class="btn">Sign Up Now</a>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2024 One Month Ideal Mother & Father Program. All rights reserved.</p>
